@@ -158,6 +158,7 @@
         <section>
             <div class="container text-center">
                 <div class="row g-2">
+                    <!-- 1st course -->
                     <div class="col-lg-6 col-md-12">
                         <div class="p-3 border bg-light d-flex flex-md-row flex-column">
                             <img src="images/course/course-1.png" alt="">
@@ -169,6 +170,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- 2nd course -->
                     <div class="col-lg-6 col-md-12">
                         <div class="p-3 border bg-light d-flex flex-md-row flex-column">
                             <img src="images/course/course-2.png" alt="">
@@ -180,6 +182,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- 3rd course -->
                     <div class="col-lg-6 col-md-12">
                         <div class="p-3 border bg-light d-flex flex-md-row flex-column">
                             <img src="images/course/course-3.png" alt="">
@@ -191,6 +194,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- 4th course -->
                     <div class="col-lg-6 col-md-12">
                         <div class="p-3 border bg-light d-flex flex-md-row flex-column">
                             <img src="images/course/course-4.png" alt="">
@@ -202,6 +206,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- 5th course -->
                     <div class="col-lg-6 col-md-12">
                         <div class="p-3 border bg-light d-flex flex-md-row flex-column">
                             <img src="images/course/course-5.png" alt="">
@@ -213,6 +218,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- 6th course -->
                     <div class="col-lg-6 col-md-12">
                         <div class="p-3 border bg-light d-flex flex-md-row flex-column">
                             <img src="images/course/course-6.png" alt="">
@@ -232,24 +238,177 @@
         </section>
         <!-- courses ends -->
         <br>
-        <br>
         <!-- ready-join-section starts -->
         <section class="container">
             <div
                 class="d-flex flex-lg-row flex-column justify-content-around border border-success p-5 mb-5 rounded-3 bg-primary">
                 <div class="text-white">
                     <h4>Ready to join?</h4>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    <p class="small">It is a long established fact that a reader will be distracted <br> by the readable
+                        content of a page
                         when
                         looking at its layout.</p>
                 </div>
-                <div class="mt-2">
-                    <button class="btn btn-outline-primary bg-dark text-white p-2" type="submit">Register Now</button>
+                <div class="mt-4">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary bg-dark" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Launch demo modal
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h2>please enter your name & email</h2>
+                                    <form action="">
+                                        <input type="text" name="" id="" placeholder="enter name">
+                                        <input type="email" name="" id="" placeholder="enter email">
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </section>
-        <!-- ready-join-section starts -->
+        <br>
+        <br>
+        <!-- ready-join-section ends -->
+        <!-- Q&A starts -->
+        <section class="container">
+            <h1 class="text-center fw-bold">Frequently Asked Questions</h1>
+            <p class="mt-3 text-center fw-semibold h6">Your requested questions <br> & Our promised answers </p>
+            <br>
+            <br>
+            <!-- Questions -->
+            <div class="accordion w-50 container" id="accordionPanelsStayOpenExample">
+                <!-- 1st q&a -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            What are the differences between flex-box and grid?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                            Dimensions define the primary demarcation between Flexbox and CSS Grid. Flexbox was designed
+                            specifically for one-dimensional layouts, while CSS Grid is engineered to enable
+                            two-dimensional layouts. Therefore, CSS Grid can easily render rows and columns
+                            simultaneously. <br>
+                            In layperson’s terms, CSS Grid presents a larger canvas, while Flexbox offers minute
+                            functionality that operates in a restricted space. The grids have been designed for a
+                            two-dimensional organization.
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd q&a -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            What are the differences between Bootstrap and Tailwind?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                            <P>Tailwind offers predesigned widgets to build a site from scratch with fast UI
+                                development. <br> Bootstrap comes with a set of pre-styled responsive, mobile-first
+                                components that possess
+                                a definite UI kit.</p>
+                            <P>Websites created using Tailwind CSS are much more customizable. <br> Websites created
+                                with Bootstraps are known for their responsiveness and flawless design, but the looks
+                                are generic and similar.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- 3rd q&a -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            What is CSS Box Model?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                            <p>The CSS box model is a container that contains multiple properties including borders,
+                                margin, padding, and the content itself. It is used to create the design and layout of
+                                web
+                                pages. It can be used as a toolkit for customizing the layout of different elements. The
+                                web
+                                browser renders every element as a rectangular box according to the CSS box model.
+                                Box-Model
+                                has multiple properties in CSS.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 4th q&a -->
+            <div>
+                <div class="accordion w-50 container" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                What is semantic tag?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p>A semantic element clearly describes its meaning to both the browser and the
+                                    developer.
+                                    <br> Semantic Elements: Semantic elements have meaningful names which tells about
+                                    type
+                                    of content. For example header, footer, table, … etc. HTML5 introduces many semantic
+                                    elements as mentioned below which make the code easier to write and understand for
+                                    the
+                                    developer as well as instructs the browser on how to treat them.
+                                <ul>
+                                    <li>article</li>
+                                    <li>aside</li>
+                                    <li>details</li>
+                                    <li>figcaption</li>
+                                    <li>figure</li>
+                                    <li>footer</li>
+                                    <li>header</li>
+                                    <li>main</li>
+                                    <li>mark</li>
+                                    <li>nav</li>
+                                    <li>section</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- Q&A ends -->
     </main>
     <!-- main part ends -->
     <!-- js tag starts -->
